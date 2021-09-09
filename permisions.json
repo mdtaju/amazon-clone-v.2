@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ama-zon-by-tajuuddin",
+  "private_key_id": "f7cdadbe8048a6d2f29105975c0898ee24e80026",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCZOiDo97paCRTM\nyoQ38wnYUbU3h9x9ICJS/VPROzHGS/j1XO9afA6I+K84SqVL5DVTX+4c7Xrox70X\nljMa9WblFf7ZPgxKcKdCEZ/38hVSyTxDtxN7lKUK2Dy/P61L1E3N34RaHIk0Hk/i\nVhuzUjse342/z6bDo28xRUoBcjo0a2u/X6B1oE4XmIG7TyuICJDMYMV8SU6heJmx\nAKxM6ulx+CJ27iK1bk7mMDg/6tAo5FWJGC0FbcowfFKfNnDNY84cBTiLbWkoDWhS\n/Q61ouiPvfO7ukavu7BRRCESYpC3e80EVqE/X8uFqWdxJ4bFd4bM95BWjmPLWGYG\nntsf9AFrAgMBAAECggEABwgO2ldYXnA9zVXTklfvKg5zKsn514LHN5FJJX8zIael\nvvaD0kH0QFtPXkEocrdx5wQgENo3PuyHII+h2PdpwGDYIdn+hbqnQkQhAplB6QYX\nRxvIo23xmdWwe/TwqiLxaxZdwJf5Fhf4Ore7T7BS5uGuRztrcZY3aX+FuHBhX58J\n55s7SPq6ooN99H+gIkn6eLMdNoxrEZEHyvPHYj/Nijga4jOa3nT0O7vDgUgSGNkF\nepNbuimt2u/TLnQQNUnk5h2kF722m3VZQoybp/z2kgfmb9Zxst5SVLACduscFiPd\nwaspALP8oKAvX6Wx8a+rM36ye5Xje9V/cu0dBCyY8QKBgQDTBziM/TeYy/8rJi+m\nhu0Msj8KgCIT6iJ7rRuHJ8G0lNZNi9eJ0DanocVlnJ/NML2f/Xoebs/NBQFOGgjH\nHmbotIz/x+r+nwFGqhZSKnmnBta5kEKhGdGWyO1J58/XAn32/dbIc46E+UUe8Wbg\npfB4fyMGrPz57NivXF/Q2kMtswKBgQC54YeAEXUVbytSD/iaTTTf2nBfKrypI8YF\nsNCGwkfNXOb8E6ZhouwepP5IAgg+X2KA14DhsbBwozfC2TX8fw4wNO1l8MN8alAG\nsbfMPY2ATuBIdtkwXWHXEgJqMBEQq8r9NjGcGzV7w4drde3km6/9gvbrZXUoFXrY\n0dPUOT0xaQKBgH2j//RZUn+jfSHIk3g3Pu1fNo9e6Gso7CzsTMZ0UizcrJbw2nwP\nvmqhszAjRzVYfp3BwbJa0VfEUhmZAH7kx+pmjMhA09WS/6R94do7tcBPHwrOLA1U\nnOeEa1qkLKdbsXmbegRQYJsk+hVJLrIzue9T6puv5NI8RGpruhRTzslnAoGADifl\nyNQLhaFcvDgpJ58fmrio/CZmDb+CsiZACzM6gqJDmQjqD993efH4x4UYGZ/sAYHn\n98gvdrSHZ5hhKySF8RfmyG+og44ZIBlitPQvFYlsPTiH284QyG8/rdSRSCK9J8F7\nz7amwREn/AAUKOfOZFEX+t9UJ8RTAbYhGrVtOpkCgYAdwe2BV30Wn+tvuaT0GzBZ\nXd/EolonRP9wkhR8lnYVlv+L7Ql7ZBxADMArSPHcCGEY4Kwl7z9eRGJkFurQrXC8\n/h4dIMPzhT2RGtloBDSJOWAi8oxM/gjb4WiClpyXFMEQmFVfOt9cj0WmAQSvDq4k\nsJOUcSRsC1myqfFzvCVFgw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-9vg4d@ama-zon-by-tajuuddin.iam.gserviceaccount.com",
+  "client_id": "100543360485678970504",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-9vg4d%40ama-zon-by-tajuuddin.iam.gserviceaccount.com"
+}
