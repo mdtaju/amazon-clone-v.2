@@ -16,7 +16,7 @@ const Success = () => {
                         <CheckCircleIcon className='text-green-500 h-10'/>
                         <h1 className='text-3xl'>Your order has been confirmed</h1>
                     </div>
-                    <p>Thank you for shopping with us. We'll send a confirmation once your items has been shipping. If you like to check the status of your order(s) please press the link below</p>
+                    <p>Thank you for shopping with us. Well send a confirmation once your items has been shipping. If you like to check the status of your order(s) please press the link below</p>
                     <button onClick={() => router.push('/orders')} className='button mt-8'>Go to my orders</button>
                 </div>
             </main>
