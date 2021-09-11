@@ -9,12 +9,12 @@ const Products = ({ products }) => {
             ))}
             <img className='md:col-span-full' src='https://links.papareact.com/dyz' alt='Add-banner'/>
             <div className='md:col-span-2'>
-                {products.slice(4, 5).map((product) => (
-                    <Product product={product} key={product.key} />
+                {products.slice(4, 5).map((product, id) => (
+                    <Product product={product} key={id} />
                 ))}
             </div>
-            {products.slice(5, products.length).map((product) => (
-                <Product product={product} key={product.key} />
+            {products.slice(5, products.length).map((product, id) => (
+                <Product product={product} key={id} />
             ))}
         </div>
     );

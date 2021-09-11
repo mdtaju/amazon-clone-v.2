@@ -3,10 +3,10 @@ import React from 'react';
 import db from '../firebase';
 import Header from '../src/components/Header';
 import moment from 'moment'
+import Order from '../src/components/Order';
 
-const Orders = ({ orders }) => {
+const Orders = ({ userOrders }) => {
     const session = useSession();
-    console.log(orders)
     return (
         <div>
             <Header />
@@ -16,6 +16,13 @@ const Orders = ({ orders }) => {
                     session ? <h2>X orders</h2> :
                     <h2>Please sign in to see your orders</h2>
                 }
+                <div>
+                    {
+                        userOrders?.map((order, id) => (
+                            <Order key={id} order={order}/>
+                        ))
+                    }
+                </div>
             </main>
         </div>
     );
@@ -24,8 +31,8 @@ const Orders = ({ orders }) => {
 export default Orders;
 
 export async function getServerSideProps(context) {
-    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY)
-    const session = getSession(context)
+    const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+    const session = await getSession(context);
 
     if (!session) {
         return{
@@ -38,24 +45,24 @@ export async function getServerSideProps(context) {
     .collection('orders')
     .orderBy('timestamp', 'desc')
     .get();
-    const orders = await Promise.all(
+    const userOrders = await Promise.all(
         stripeOrders.docs.map(async (order) => ({
             id: order.id,
             amount: order.data().amount,
             amountShipping: order.data().amount_shipping,
-            image: order.data().image,
+            images: order.data().images,
             timestamp: moment(order.data().timestamp.toDate()).unix(),
-            items: {
-                await stripe.checkout.session.listLineItems(order.id, {
+            items: (
+                await stripe.checkout.sessions.listLineItems(order.id, {
                     limit: 100
-                }).data
-            }
+                })
+            ).data,
         }))
     );
 
     return {
         props: {
-            orders
+            userOrders
         }
     }
 }
