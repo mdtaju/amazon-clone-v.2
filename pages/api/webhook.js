@@ -22,9 +22,6 @@ const fulfillOrder = async (session) => {
         images: JSON.parse(session.metadata.images),
         timestamp: admin.firestore.FieldValue.serverTimestamp()
     })
-    .then(() => {
-        console.log(`success - order id: ${session.id}`)
-    })
 };
 
 export default async (req, res) => {
@@ -38,7 +35,6 @@ export default async (req, res) => {
         try {
             event = stripe.webhooks.constructEvent(payload, sig, endpointSecret);
         } catch (err) {
-            console.log('Error', err.message)
             return res.status(400).send(`Webhook error: ${err.message}`) 
         }
         if(event.type === 'checkout.session.completed'){
